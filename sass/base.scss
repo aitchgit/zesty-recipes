@@ -1,0 +1,53 @@
+// COLOR VARIABLES
+$color-primary-light: #F8AA65;
+$color-primary: #FF6D07;
+$color-primary-dark: #E84205;
+
+$color-secondary: #EB793B;
+$color-secondary-dark: #B53412;
+
+$color-grey-light: #eee;
+$color-grey-dark: #1C1C1C;
+
+// FONT VARIABLES
+$font-primary: 'Dosis', sans-serif;
+
+// BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container {
+    display: block;
+    max-width: 144rem;
+    margin: 0 auto;
+    width: 100%
+}
